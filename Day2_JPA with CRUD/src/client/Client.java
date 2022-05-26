@@ -12,14 +12,14 @@ public class Client {
 		Student student = new Student();
 		//CRUD operation
 		//create
-		student.setID(43);
+		student.setID(44);
 		student.setName("Chandana");
 		service.addStudent(student);
 		
 		//Retrieve data-find();
-		student=service.findStudentById(41);
+		/*student=service.findStudentById(41);
 		System.out.println("ID: "+student.getID());
-		System.out.println("ID: "+student.getName());
+		System.out.println("ID: "+student.getName());*/
 		
 		//update
 		student=service.findStudentById(41);
@@ -27,8 +27,8 @@ public class Client {
 		service.updateStudent(student);
 		
 		//delete
-		student=service.findStudentById(41);
-		service.removeStudent(student);
+		/*student=service.findStudentById(41);
+		service.removeStudent(student);*/
 	}
 	
 
